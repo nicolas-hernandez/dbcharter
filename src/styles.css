@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Windows 98 style desktop */
+
+body {
+	background: #008080;
+}
+
+#title {
+  color: #FFFFFF;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 5px 5px black;
+}

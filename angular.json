@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngmaid": {
+    "dbcharter": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngmaid",
+            "outputPath": "dist/dbcharter",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/98.css/dist/98.css"
             ],
             "scripts": []
           },
@@ -62,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngmaid:build"
+            "browserTarget": "dbcharter:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngmaid:build:production"
+              "browserTarget": "dbcharter:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngmaid:build"
+            "browserTarget": "dbcharter:build"
           }
         },
         "test": {
@@ -110,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngmaid:serve"
+            "devServerTarget": "dbcharter:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngmaid:serve:production"
+              "devServerTarget": "dbcharter:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "ngmaid"
+  "defaultProject": "dbcharter"
 }
